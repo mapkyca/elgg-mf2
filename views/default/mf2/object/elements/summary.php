@@ -35,3 +35,5 @@ $content = elgg_extract('content', $vars, $entity->description);
 <a style="display: none;" href="<?= $entity->getUrl(); ?>" class="u-url"><?= $text; ?></a>
 <p style="display: none;" class="p-summary"><?= $subtitle; ?></p>
 <div style="display: none;" class="e-content"><?= $content; ?></div>
+<time style="display: none;" class="dt-published" datetime="<?= date(DATE_W3C, $entity->time_created); ?>"><?= date('c', $entity->time_created); ?></time>
+<time style="display: none;" class="dt-updated" datetime="<?= date(DATE_W3C, $entity->time_updated); ?>"><?= date('c', $entity->time_updated); ?></time>
