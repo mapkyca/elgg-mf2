@@ -21,6 +21,7 @@ elgg_register_event_handler('init', 'system', function() {
     
     // Make h-card elements behave
     elgg_extend_view('object/elements/summary', "mf2/object/elements/summary");
+    elgg_extend_view('river/elements/body', "mf2/river/elements/body");
     
     // Now, do some generic post processing to image block to make some elements behave correctly - the most generic way of adding h-entry details
     elgg_register_plugin_hook_handler('view', 'page/components/image_block', function($hook, $type, $return, $params) {
